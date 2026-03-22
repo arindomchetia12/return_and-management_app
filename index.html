@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Returns & Expenses Manager</title>
+
+  <!-- Link your CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div>
+        <div class="logo">R&E Manager Hub</div>
+        <ul class="menu">
+          <li class="menu-item">Dashboard</li>
+          <li class="menu-item">Returns</li>
+          <li class="menu-item active">Expenses</li>
+        </ul>
+      </div>
+
+      <div class="profile">
+        <div class="avatar">JD</div>
+        <div class="info">
+          John Doe<br />
+          Workspace Admin
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+      <div class="card header-card">
+        <div>
+          <h2>Expenses</h2>
+          <p>Record and categorize your expenses.</p>
+        </div>
+        <button class="btn-primary">+ New Expense</button>
+      </div>
+
+      <div class="card table-card">
+        <input class="input" placeholder="Search expenses or categories..." />
+
+        <table>
+          <thead>
+            <tr>
+              <th>Description</th>
+              <th>Category</th>
+              <th>Amount</th>
+              <th>Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Empty state for now -->
+          </tbody>
+        </table>
+
+        <div class="empty">
+          <div class="icon">💵</div>
+          <p>No expenses found</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
